@@ -1,6 +1,6 @@
 {
   "name": "px2cc",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CLI tool to quickly install PromptX roles into Claude Code as agents or commands",
   "main": "cli.js",
   "type": "module",
