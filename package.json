@@ -1,0 +1,50 @@
+{
+  "name": "px2cc",
+  "version": "1.0.3",
+  "description": "CLI tool to quickly install PromptX roles into Claude Code as agents or commands",
+  "main": "cli.js",
+  "type": "module",
+  "bin": {
+    "px2cc": "./bin.js"
+  },
+  "scripts": {
+    "start": "./promptx-cli",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@promptx/core": "^1.13.0",
+    "@promptx/logger": "^1.13.0",
+    "@promptx/resource": "^1.13.0",
+    "claude-code-builder": "^1.0.0",
+    "inquirer": "^9.2.0",
+    "chalk": "^5.3.0"
+  },
+  "files": [
+    "cli.js",
+    "bin.js",
+    "README.md",
+    "package.json"
+  ],
+  "keywords": [
+    "promptx",
+    "claude-code",
+    "cli",
+    "ai",
+    "roles",
+    "agents",
+    "commands"
+  ],
+  "author": "PromptX Bridge Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/promptx/px2cc"
+  },
+  "homepage": "https://github.com/promptx/px2cc#readme",
+  "bugs": {
+    "url": "https://github.com/promptx/px2cc/issues"
+  }
+}
