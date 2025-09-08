@@ -376,7 +376,7 @@ export async function main() {
     console.log(`📊 发现 ${chalk.bold(systemRoles.length)} 个系统角色，${chalk.bold(userRoles.length)} 个用户角色\n`);
     
     // 显示角色选择
-    const { selectedRole, installType, confirm, selectedTools } = await showRoleMenu(systemRoles, userRoles, availableServers);
+    const { selectedRole, installType, confirm, selectedTools, customName } = await showRoleMenu(systemRoles, userRoles, availableServers);
     
     if (!confirm) {
       console.log(chalk.yellow('\n👋 安装已取消'));
@@ -389,7 +389,7 @@ export async function main() {
     console.log(chalk.blue(`\n🎭 开始安装角色: ${selectedRole.role} (${installType})`));
     
     // 安装角色
-    const result = await installRole(selectedRole, installType, claudeDir, selectedTools, selections.customName);
+    const result = await installRole(selectedRole, installType, claudeDir, selectedTools, customName);
     
     console.log(chalk.green.bold('\n✅ 角色安装完成！'));
     console.log(`\n📄 生成的文件:`);
