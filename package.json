@@ -1,6 +1,6 @@
 {
   "name": "px2cc",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "CLI tool that implements complete PromptX Action flow in Claude Code - role activation, dependency loading, cognition networks & memory systems",
   "main": "cli.js",
   "type": "module",
