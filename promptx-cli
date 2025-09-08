@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# PromptX CLI - 过滤版本
+# 运行cli.js但过滤掉PromptX内部日志
+
+# 获取脚本所在目录
+DIR="$(dirname "${BASH_SOURCE[0]}")"
+
+# 运行cli.js并过滤日志
+node "$DIR/cli.js" 2>&1 | grep -v -E '\[ResourceManager\]|\[PackageDiscovery\]|\[UserDiscovery\]|\[ProjectDiscovery\]|@promptx/core|项目未初始化|Registry loaded|Discovery managers|Initialization complete'
